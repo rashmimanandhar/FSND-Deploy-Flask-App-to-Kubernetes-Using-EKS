@@ -1,0 +1,14 @@
+docker build -t myimage .
+# Check the list of images
+docker image ls
+# Remove any image
+docker image rm <image_id>
+[use] docker run -p 8080:8080 IMAGE_ID
+[do not use] docker run --name myContainer --env-file=.env_file -p 80:8080 myimage
+# List running containers
+docker container ls
+docker ps
+# Stop a container
+docker container stop <container_id>
+# Remove a container
+docker container rm <container_id>

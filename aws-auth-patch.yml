@@ -14,6 +14,8 @@ data:
     []
 kind: ConfigMap
 metadata:
+  kubectl.kubernetes.io/last-applied-configuration: |
+    {"apiVersion":"v1","data":{"mapRoles":"- rolearn: arn:aws:iam::728956037968 :role/UdacityFlaskDeployCBKubectlRole\n username: build\n groups:\n - system:masters\n"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"aws-auth","namespace":"kube-system"}}
   creationTimestamp: "2021-06-29T20:42:12Z"
   name: aws-auth
   namespace: kube-system
